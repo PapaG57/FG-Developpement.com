@@ -1,0 +1,130 @@
+/*------------------------------------------------------*/
+/*******			 	CODE GÉNÉRAL 			   ******/
+/*------------------------------------------------------*/
+
+@import url('http://fonts.googleapis.com/css?family=Varela+Round');
+@import url('http://fonts.googleapis.com/css?family=Lato');
+@import url('http://fonts.googleapis.com/css?family=Allerta+Stencil');
+@import url('http://fonts.googleapis.com/css?family=Raleway:300');
+@import url('https://fonts.googleapis.com/css2? family= Source+Sans+Pro:wght@200 & display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+    background: linear-gradient(to right, #0ebcf1, #cceff0);
+	font-family: 'Varela Round', sans-serif;
+}
+
+/*------------------------------------------------------*/
+/****** 			PAGE CONSTRUCTION			   ******/
+/*------------------------------------------------------*/
+
+.body-construction {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+}
+
+.split {
+	height: 100%;
+	width: 50%;
+	position: fixed;
+}
+
+.left {
+	left: 0;
+	top: 0;
+	width: 50%;
+	height: auto;
+}
+
+.right {
+	right: 0;
+	top: 100px;
+	width: 50%;
+}
+
+.centered {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.img-construction-left {
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+
+.img-construction-right {
+width: 150px;
+height: 150px;
+box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
+}
+
+.h1-construction {
+	font-family: 'Allerta Stencil', sans-serif;
+	color: #0ebcf1;
+	transform:scaleY(2);
+	font-size: 4rem;
+	font-weight: 700;
+	text-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
+}
+
+.p-construction {
+	color: #000;
+	font-size: 1rem;
+	font-weight: 900;
+	letter-spacing: 10px;
+	transform:scaleY(1.5);
+	text-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
+}
+
+.joindre-construction {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #e1e1e1;
+	width: 600px;
+	height: 100px;
+	box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
+}
+
+.mailto {
+	text-decoration: none;
+	font-size: 1.5rem;
+	color: #0ebcf1;
+	text-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
+}
+.mailto:hover {
+	color: #000;
+	font-weight: 900;
+}
+
+.back-button {
+	position: absolute;
+	top: 45%;
+	left: 30%;
+	background-color: #0ebcf1;
+	padding: 20px 30px;
+	border: solid 2px #e1e1e1;
+	border-radius: 15px;
+	font-family: 'Allerta Stencil', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #fff;
+}
+
+.back-button:hover {
+	background-color: #fff;
+	color: #0ebcf1;
+	box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
+}
+
+.back-button:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
