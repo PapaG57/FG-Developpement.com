@@ -40,7 +40,7 @@ body {
 
 .right {
 	right: 0;
-	top: 100px;
+	top: 20px;
 	width: 50%;
 }
 
@@ -60,16 +60,16 @@ body {
 }
 
 .img-construction-right {
-width: 150px;
-height: 150px;
-box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
 }
 
 .h1-construction {
 	font-family: 'Allerta Stencil', sans-serif;
-	color: #0ebcf1;
+	color: #000000;
 	transform:scaleY(2);
-	font-size: 4rem;
+	font-size: 2rem;
 	font-weight: 700;
 	text-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
 }
@@ -90,7 +90,7 @@ box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
 	flex-direction: column;
 	background-color: #e1e1e1;
 	width: 600px;
-	height: 100px;
+	height: 150px;
 	box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
 }
 
@@ -103,28 +103,4 @@ box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
 .mailto:hover {
 	color: #000;
 	font-weight: 900;
-}
-
-.back-button {
-	position: absolute;
-	top: 45%;
-	left: 30%;
-	background-color: #0ebcf1;
-	padding: 20px 30px;
-	border: solid 2px #e1e1e1;
-	border-radius: 15px;
-	font-family: 'Allerta Stencil', sans-serif;
-	font-size: 1.5rem;
-	font-weight: 700;
-	color: #fff;
-}
-
-.back-button:hover {
-	background-color: #fff;
-	color: #0ebcf1;
-	box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
-}
-
-.back-button:active {
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
