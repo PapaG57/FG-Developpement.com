@@ -121,3 +121,14 @@ footer {
     width: 100px;
     height: 45px;
 }
+
+.contact {
+    color: #fcfcfc;
+    letter-spacing: normal;
+    font-size: 0.6rem;
+    font-weight: 100;
+}
+
+.contact:hover {
+    transform: scale(1.2);
+}
