@@ -139,3 +139,25 @@ footer {
     font-size: 0.6rem;
     font-weight: 100;
 }
+
+/*------------------------------------------------------*/
+/*******	    	VERSION  TABLETTE 	   		   ******/
+/*------------------------------------------------------*/
+
+@media screen  and (max-width: 992px) {
+    .head {
+        width: auto;
+    }
+
+    .titre {
+        font-size: 1.8rem;
+    }
+
+    .content {
+        width: auto;
+    }
+
+    .all-cards {
+        
+    }
+}
