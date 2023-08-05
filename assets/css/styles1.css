@@ -3,10 +3,6 @@
 /*------------------------------------------------------*/
 
 @import url('http://fonts.googleapis.com/css?family=Varela+Round');
-@import url('http://fonts.googleapis.com/css?family=Lato');
-@import url('http://fonts.googleapis.com/css?family=Allerta+Stencil');
-@import url('http://fonts.googleapis.com/css?family=Raleway:300');
-@import url('https://fonts.googleapis.com/css2? family= Source+Sans+Pro:wght@200 & display=swap');
 
 body {
 	margin: 0;
@@ -103,4 +99,31 @@ body {
 .mailto:hover {
 	color: #000;
 	font-weight: 900;
+}
+
+
+/*------------------------------------------------------*/
+/*******	    	VERSION  RESPONSIVE	   		   ******/
+/*------------------------------------------------------*/
+
+@media screen  and (max-width: 992px) {
+	body {
+
+		font-family: 'Varela Round', sans-serif;
+	}
+
+	.body-construction {
+		height: auto;
+		width: auto;
+	}
+
+	.left {
+		margin: 0;
+		padding: 0;
+		background: linear-gradient(to right, #0ebcf1, #cceff0);
+		width: 0;
+		height: 0;
+	}
+
+
 }
