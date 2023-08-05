@@ -133,11 +133,14 @@ footer {
     background-color: #050596;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
     color: #fcfcfc;
     letter-spacing: normal;
     font-size: 0.6rem;
     font-weight: 100;
+}
+
+.contact:hover {
+    box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
 }
 
 /*------------------------------------------------------*/
