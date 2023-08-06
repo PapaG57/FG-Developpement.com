@@ -146,10 +146,15 @@ body {
 @media screen  and (max-width: 395px) {
 	.body-construction {
 		margin: 20px;
+		height: auto;
 	}
 
 	.right {
 		margin-right: 120px;
+	}
+
+	.centered {
+		margin-top: 60px;
 	}
 
 	.h1-construction {
