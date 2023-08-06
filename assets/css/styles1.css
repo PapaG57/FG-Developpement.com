@@ -96,6 +96,7 @@ body {
 	color: #0ebcf1;
 	text-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
 }
+
 .mailto:hover {
 	color: #000;
 	font-weight: 900;
@@ -109,7 +110,6 @@ body {
 @media screen  and (max-width: 992px) {
 	body {
 		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/img/developpeur-web.jpg);
-		font-family: 'Varela Round', sans-serif;
 	}
 
 	.left {
@@ -144,5 +144,41 @@ body {
 }
 
 @media screen  and (max-width: 395px) {
+	.body-construction {
+		margin: 20px;
+	}
+
+	.right {
+		margin-right: 120px;
+	}
+
+	.h1-construction {
+		font-size: 1rem;
+	}
+
+	.p-construction {
+		font-size: 0.5rem;
+	}
+
+	.img-construction-right {
+		width: 100px;
+		height: 100px;
+	}
+
+	.img-construction-right {
+		width: 80px;
+		height: 80px;
+	}
+
+	.joindre-construction {
+		width: auto;
+		height: auto;
+		padding: 15px;
+		font-size: 0.7rem;
+	}
 	
+	.mailto {
+		text-decoration: none;
+		font-size: 1.1rem;
+	}
 }
