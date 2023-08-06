@@ -108,22 +108,41 @@ body {
 
 @media screen  and (max-width: 992px) {
 	body {
-
+		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/img/developpeur-web.jpg);
 		font-family: 'Varela Round', sans-serif;
 	}
 
-	.body-construction {
-		height: auto;
-		width: auto;
-	}
-
 	.left {
-		margin: 0;
-		padding: 0;
-		background: linear-gradient(to right, #0ebcf1, #cceff0);
-		width: 0;
-		height: 0;
+		display: none;
 	}
 
+	.right {
+		margin-right: 250px;
+	}
 
+	.h1-construction,
+	.p-construction {
+		color: #ffffff;
+	}
+
+	.h1-construction {
+		font-size: 1.5rem;
+	}
+
+	.p-construction {
+		font-size: 0.8rem;
+	}
+
+	.img-construction-right {
+		width: 100px;
+		height: 100px;
+	}
+
+	.centered {
+		width: 130%;
+	}
+}
+
+@media screen  and (max-width: 395px) {
+	
 }
