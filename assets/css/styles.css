@@ -57,17 +57,16 @@ h3 {
 .container {
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 77vh;
-    width: 100%;
 }
 
 .content {
     background-color: transparent;
     backdrop-filter: blur(8px);
     padding: 15px;
-    margin-top: 160px;
-    height: 25vh;
-    width: 1400px;
+    height: 50vh;
+    width: 1000px;
     border-radius: 5px;
     border: solid 1px;
     border-color: #000000 ;
@@ -190,6 +189,14 @@ footer {
         padding: 10px;
     }
 
+    .container {
+        height: 83vh;
+    }
+
+    a {
+        font-size: 0.8rem;
+    }
+
     .titre {
         text-align: center;
         font-size: 1rem;
@@ -199,10 +206,6 @@ footer {
     .logo {
         width: 100px;
         height: 45px;
-    }
-    
-    .container {
-        margin: 10px;
     }
 
     .content h2 {
@@ -216,11 +219,11 @@ footer {
         flex-direction: column;
     }
 
-    .card1, .card2, .card3 {
+    .card1, .card2, .card3, .card4, .card5 {
         width: 300px;
     }
 
-    .card1 a, .card2 a, .card3 a {
+    .card1 a, .card2 a, .card3 a, .card4 a, .card5 a {
         font-size: 0.8rem;
     }
 
@@ -241,5 +244,60 @@ footer {
 
     h3 {
         font-size: 0.4rem!important;
+    }
+}
+
+/*******	   	VERSION  RESPONSIVE	LANDSCAPE   	   ******/
+
+
+@media all and (orientation: landscape) {
+
+    .container {
+        height: 76vh;
+    }
+
+    .content {
+        margin: 0;
+    }
+
+    .head {
+        margin: 0;
+        padding: 0;
+        height: 60px;
+    }
+
+    .titre {
+        font-size: 1.3rem;
+    }
+
+    .logo {
+        width: 100px;
+        height: 50px;
+    }
+
+    .card1, .card2, .card3, .card4, .card5 {
+        width: 350px;
+        height: 30px;
+    }
+
+    .card1 a, .card2 a, .card3 a, .card4 a, .card5 a {
+        font-size: 0.8rem;
+    }
+
+    .all-cards {
+        gap: 10px;
+    }
+
+    .titre-liste {
+        font-size: 1.3rem;
+    }
+
+    .logo-footer {
+        width: 75px;
+        height: 30px;
+    }
+
+    .contact {
+        font-size: .5rem;
     }
 }
