@@ -86,9 +86,10 @@ h3 {
     justify-content: center;
     align-items: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
-.card1, .card2, .card3 {
+.card1, .card2, .card3, .card4, .card5 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,7 +103,7 @@ h3 {
 
 }
 
-.card1:hover, .card2:hover, .card3:hover {
+.card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover {
     background-color: #fcfcfc;
     color: #000000;
     cursor: pointer;
