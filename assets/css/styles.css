@@ -88,7 +88,7 @@ h3 {
     flex-wrap: wrap;
 }
 
-.card1, .card2, .card3, .card4, .card5 {
+.card {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,10 +99,9 @@ h3 {
     border: solid 1px;
     border-color: #000000 ;
     text-transform: uppercase;
-
 }
 
-.card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover {
+.card:hover {
     background-color: #fcfcfc;
     color: #000000;
     cursor: pointer;
@@ -177,7 +176,7 @@ footer {
         
     }
 
-    .card1, .card2, .card3, .card4, .card5 {
+    .card {
         width: 360px;
         height: 40px;
     }
@@ -235,11 +234,11 @@ footer {
         flex-direction: column;
     }
 
-    .card1, .card2, .card3, .card4, .card5 {
+    .card {
         width: 300px;
     }
 
-    .card1 a, .card2 a, .card3 a, .card4 a, .card5 a {
+    .card a {
         font-size: 0.8rem;
     }
 
@@ -291,12 +290,12 @@ footer {
         height: 50px;
     }
 
-    .card1, .card2, .card3, .card4, .card5 {
+    .card {
         width: 350px;
         height: 30px;
     }
 
-    .card1 a, .card2 a, .card3 a, .card4 a, .card5 a {
+    .card a {
         font-size: 0.8rem;
     }
 
