@@ -58,6 +58,8 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 50px;
     height: auto;
     margin-top: 100px;
 }
@@ -103,6 +105,29 @@ h3 {
 
 .card:hover {
     background-color: #fcfcfc;
+    color: #000000;
+    cursor: pointer;
+    box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
+}
+
+.text-card {
+    color: #ffffff;
+}
+
+.back-button {
+    width: 450px;
+    height: 50px;
+    background-color: rgba(172, 125, 125, 0);
+    border-radius: 5px;
+    text-transform: uppercase;
+	font-size: 1rem;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.back-button:hover {
+    background-color: #ffffff;
+    backdrop-filter: blur(8px);
     color: #000000;
     cursor: pointer;
     box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
