@@ -169,6 +169,8 @@ footer {
 /*******	    	VERSION  RESPONSIVE	   		   ******/
 /*------------------------------------------------------*/
 
+/* TABLETTE */
+
 @media screen  and (max-width: 992px) {
     .head {
         width: auto;
@@ -207,6 +209,8 @@ footer {
     }
 }
 
+/* GRAND SMARTPHONE */
+
 @media screen  and (max-width: 768) {
     .titre {
         font-size: 1.2rem;
@@ -219,7 +223,10 @@ footer {
     }
 }
 
+/* SMARTPHONE */
+
 @media screen  and (max-width: 350px) {
+
     .head {
         margin: 5px;
         padding: 10px;
@@ -229,7 +236,42 @@ footer {
         height: 83vh;
     }
 
+    .content {
+        width: 80%;
+        height: auto;
+        /* margin: 20px 0 20px 0; */
+    }
+
+    .content h2 {
+        font-size: 1rem;
+    }
+
+    .all-cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 280px;
+    }
+
+    .card a {
+        font-size: 0.6rem;
+    }
+
+    .back-button {
+        width: 200px;
+        height: 50px;
+        font-size: 0.8rem;
+    }
+    
     a {
+        font-size: 0.8rem;
+    }
+
+    p {
         font-size: 0.8rem;
     }
 
@@ -242,25 +284,6 @@ footer {
     .logo {
         width: 100px;
         height: 45px;
-    }
-
-    .content h2 {
-        font-size: 1.2rem;
-    }
-
-    .all-cards {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .card {
-        width: 300px;
-    }
-
-    .card a {
-        font-size: 0.8rem;
     }
 
     footer {
@@ -283,7 +306,7 @@ footer {
     }
 }
 
-/*******	   	VERSION  RESPONSIVE	LANDSCAPE   	   ******/
+/******* RESPONSIVE LANDSCAPE ******/
 
 
 @media (orientation: landscape) and (max-width : 321px) {
