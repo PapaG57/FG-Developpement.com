@@ -9,51 +9,28 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/Favicon_FG_Developpement.ico">
     <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-    <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="assets/css/accueil.css" rel="stylesheet">
 
-    <title>FG Développement - Accueil</title>
+    <title>FG Développement</title>
 </head>
-
 <body>
 
-    <header>
-        <div class="head">
-            <img class="logo" src="assets/img/logo-fgdeveloppement.png" alt="logo de la société" title="&#169 2023 FG Dévoppement">
-            <h1 class="titre">Florent GERARD - Développement Web</h1>
-        </div>
-    </header>
+    <!-- affichage de la vidéo -->
+    <div>
+        <video id="myVideo" autoplay>
+            <source src="assets/video/Bande_Annonce_FGDEV.mp4" type="video/mp4">
+            <source src="assets/video/Bande_Annonce_FGDEV.webm" type="video/webm">
+            <source src="assets/video/Bande_Annonce_FGDEV.ogg" type="video/ogg">
+        </video>
+    </div>
 
-    <section class="container">
-        <div class="content">
-            <h2 class="titre-liste">mes créations</h2><br>
-            <div class="all-cards">
-                <div class="card">
-                    <a href="https://www.fgdeveloppement.com/portfolio/" title="cliquer ici" target="_blank">mon portfolio</a>
-                </div>
-                <div class="card">
-                    <a href="construction.html" title="cliquer ici" target="_blank">association "maman esther"</a>
-                </div>
-                <div class="card">
-                    <a href="https://www.fgdeveloppement.com/mkservices/" title="cliquer ici" target="_blank">Sté MK SERVICES</a>
-                </div>
-                <div class="card">
-                    <a href="construction.html" title="cliquer ici" target="_blank">Sté ENI</a>
-                </div>
-                <div class="card">
-                    <a href="construction.html" title="cliquer ici" target="_blank">ONG AVUKA</a>
-                </div>
-                <div class="card">
-                    <a href="creations.html" title="cliquer ici" >créations d'affiches de promo</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- affichage du loading spinner -->
 
-    <footer>
-        <img class="logo-footer" src="assets/img/logo-fgdeveloppement.png" alt="logo de la société" title="&#169 2023 FG Développement Tous droits réservés">
-        <h3>&#169 2024 FG Développement - Tous droits réservés</h3>
-        <a class="contact" href="mailto:florentgerard@fgdeveloppement.com">ME CONTACTER</a>
-    </footer>
+    <div id="spinner">
+        <img src="assets/img/spinner.gif" alt="Loading..." />
+    </div>
+
+    <script src="assets/js/redirection.js"></script>
 
 </body>
 </html>
