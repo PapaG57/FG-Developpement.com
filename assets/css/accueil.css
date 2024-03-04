@@ -44,3 +44,33 @@ body {
     display: block;
     margin: 0 auto;
 }
+
+/*                      REPONSIVE                     */
+
+/* TABLETTE */
+
+@media screen  and (max-width: 350px) {
+    #myVideo {
+        height: auto;
+        width: 50vh;
+    }
+
+    #spinner  {
+        top: 25%;
+        left: 25%
+    }
+
+    .spinner {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* RESPONSIVE LANDSCAPE */
+
+@media (orientation: landscape) and (max-width : 321px) {
+    #myVideo {
+        height: auto;
+        width: auto;
+    }
+}
