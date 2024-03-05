@@ -136,6 +136,7 @@ footer {
     letter-spacing: normal;
     font-size: 0.6rem;
     font-weight: 100;
+    text-decoration: none;
 }
 
 .contact:hover {
@@ -150,6 +151,7 @@ footer {
     font-size: 0.6rem;
     font-weight: bold;
     text-transform:uppercase;
+    text-decoration: none;
 }
 
 .about:hover {
