@@ -245,6 +245,7 @@ footer {
     
     a {
         font-size: 0.8rem;
+        text-decoration: none;
     }
 
     p {
@@ -293,6 +294,7 @@ footer {
 
     .about {
         font-size: .4rem;
+        padding: 5px;
     }
 }
 
