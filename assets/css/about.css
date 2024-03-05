@@ -1,0 +1,39 @@
+/*------------------------------------------------------*/
+/*******			 	CODE GÉNÉRAL 			   ******/
+/*------------------------------------------------------*/
+
+@import url('http://fonts.googleapis.com/css?family=Varela+Round');
+
+body {
+	margin: 0;
+	padding: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,
+                0,
+                0,
+                0.5)),  url('/assets/img/portable_bureau.jpg')center center fixed no-repeat;
+    background-size: cover;
+	font-family: 'Varela Round', sans-serif;
+}
+
+.titre-about {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    color: #050596;
+}
+
+.fg-img {
+    width: 56px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+p {
+    color: #ffffff;
+    word-spacing: 3px;
+    line-height: 140%;
+}
+
+.strong {
+    color: #050596;
+}

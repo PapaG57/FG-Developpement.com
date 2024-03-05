@@ -7,7 +7,11 @@
 body {
 	margin: 0;
 	padding: 0;
-    background-image: url('/assets/img/developpeur-web.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,
+                0,
+                0,
+                0.5)),  url('/assets/img/developpeur-web.jpg')center center fixed no-repeat;
+                background-size: cover;
 	font-family: 'Varela Round', sans-serif;
 }
 
@@ -162,7 +166,21 @@ footer {
 }
 
 .contact:hover {
-    box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
+    box-shadow: 0 10px 20px #686161, 0 6px 6px #686161;
+}
+
+.about {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.6rem;
+    font-weight: bold;
+    text-transform:uppercase;
+}
+
+.about:hover {
+    box-shadow: 0 10px 20px #686161, 0 6px 6px #686161;
 }
 
 /*------------------------------------------------------*/
