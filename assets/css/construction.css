@@ -102,6 +102,17 @@ body {
 	font-weight: 900;
 }
 
+.logoFGDEV {
+	position: absolute;
+	top: 78%;
+	left: 65%;
+}
+
+.sizeLogoFGDEV {
+	width: 238px;
+	height: 134px;
+}
+
 
 /*------------------------------------------------------*/
 /*******	    	VERSION  RESPONSIVE	   		   ******/
