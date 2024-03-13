@@ -2,13 +2,16 @@
 /*******			 	CODE GÉNÉRAL 			   ******/
 /*------------------------------------------------------*/
 
-@import url('http://fonts.googleapis.com/css?family=Varela+Round');
+@font-face {
+    font-family: 'VarelaRound-Regular';
+    src: url('../fonts/VarelaRound-Regular.ttf') format('truetype'); /* On peut jouter d'autres formats de police si nécessaire */
+}
 
 body {
 	margin: 0;
 	padding: 0;
     background: linear-gradient(to right, #0ebcf1, #cceff0);
-	font-family: 'Varela Round', sans-serif;
+	font-family: 'VarelaRound-Regular', sans-serif;
 }
 
 /*------------------------------------------------------*/
