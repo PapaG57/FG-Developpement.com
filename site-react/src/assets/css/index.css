@@ -1,0 +1,76 @@
+/*------------------------------------------------------*/
+/*******			 	CODE GÉNÉRAL 			   ******/
+/*------------------------------------------------------*/
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/*******			 	VIDEO 			   ******/
+
+#myVideo {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    }
+
+/****************************************************/
+/*                      SPINNER                     */
+/****************************************************/
+
+#spinner {
+    display: none;
+    position: fixed;
+    top: 45%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#myVideo {
+    display: block;
+    margin: 0 auto;
+}
+
+/*                      REPONSIVE                     */
+
+/* TABLETTE */
+
+@media screen  and (max-width: 350px) {
+    #myVideo {
+        height: auto;
+        width: 50vh;
+    }
+
+    #spinner  {
+        top: 15%;
+        left: 45%
+    }
+
+    .spinner {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* RESPONSIVE LANDSCAPE */
+
+@media (orientation: landscape) and (max-width : 321px) {
+    #myVideo {
+        height: auto;
+        width: auto;
+    }
+}
