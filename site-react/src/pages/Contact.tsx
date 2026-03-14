@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import { useForm, ValidationError } from '@formspree/react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import '../assets/css/styles.css';
@@ -8,31 +9,7 @@ import '../assets/css/contact.css';
 
 const Contact: React.FC = () => {
   const navigate = useNavigate();
-  const [status, setStatus] = useState<'IDLE' | 'LOADING' | 'SUCCESS' | 'ERROR'>('IDLE');
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setStatus('LOADING');
-    const form = e.currentTarget;
-    const data = new FormData(form);
-    
-    try {
-      const formId = 'florentgerard@fgdeveloppement.com';
-      const response = await fetch(`https://formspree.io/f/${formId}`, {
-        method: 'POST',
-        body: data,
-        headers: { 'Accept': 'application/json' }
-      });
-      if (response.ok) {
-        setStatus('SUCCESS');
-        form.reset();
-      } else {
-        setStatus('ERROR');
-      }
-    } catch (error) {
-      setStatus('ERROR');
-    }
-  };
+  const [state, handleSubmit] = useForm("mbdzkvkv");
 
   return (
     <>
@@ -45,29 +22,72 @@ const Contact: React.FC = () => {
       <section className="container">
         <div className="content">
           <h2 className="titre-liste">Contactez-moi</h2>
-          <form className="contact-form" onSubmit={handleSubmit}>
-            <div className="form-group">
-              <label htmlFor="name">Nom / Entreprise</label>
-              <input type="text" id="name" name="name" placeholder="Votre nom" required />
+          
+          {state.succeeded ? (
+            <div className="status-message status-success" style={{ textAlign: 'center', padding: '20px', fontSize: '1.2rem' }}>
+              <p>Merci ! Votre message a bien été envoyé. Je reviendrai vers vous très bientôt.</p>
+              <p style={{ fontSize: '1rem', marginTop: '10px', opacity: 0.9 }}>Thank you! Your message has been sent successfully. I will get back to you very soon.</p>
             </div>
-            <div className="form-group">
-              <label htmlFor="email">Email</label>
-              <input type="email" id="email" name="_replyto" placeholder="votre@email.com" required />
-            </div>
-            <div className="form-group">
-              <label htmlFor="subject">Sujet</label>
-              <input type="text" id="subject" name="subject" placeholder="Sujet de votre message" required />
-            </div>
-            <div className="form-group">
-              <label htmlFor="message">Message</label>
-              <textarea id="message" name="message" placeholder="Votre message ici..." required></textarea>
-            </div>
-            <button type="submit" className="submit-button" disabled={status === 'LOADING'}>
-              {status === 'LOADING' ? 'Envoi en cours...' : 'Envoyer le message'}
-            </button>
-            {status === 'SUCCESS' && <div className="status-message status-success">Merci ! Message envoyé.</div>}
-            {status === 'ERROR' && <div className="status-message status-error">Erreur lors de l'envoi.</div>}
-          </form>
+          ) : (
+            <form className="contact-form" onSubmit={handleSubmit}>
+              <div className="form-group">
+                <label htmlFor="name">Nom / Entreprise (Name)</label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  placeholder="Votre nom / Your name" 
+                  required 
+                />
+                <ValidationError prefix="Nom" field="name" errors={state.errors} />
+              </div>
+              
+              <div className="form-group">
+                <label htmlFor="email">Email</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  placeholder="votre@email.com" 
+                  required 
+                />
+                <ValidationError prefix="Email" field="email" errors={state.errors} />
+              </div>
+              
+              <div className="form-group">
+                <label htmlFor="subject">Sujet (Subject)</label>
+                <input 
+                  type="text" 
+                  id="subject" 
+                  name="subject" 
+                  placeholder="Sujet de votre message / Subject" 
+                  required 
+                />
+                <ValidationError prefix="Sujet" field="subject" errors={state.errors} />
+              </div>
+              
+              <div className="form-group">
+                <label htmlFor="message">Message</label>
+                <textarea 
+                  id="message" 
+                  name="message" 
+                  placeholder="Votre message ici... / Your message..." 
+                  required
+                ></textarea>
+                <ValidationError prefix="Message" field="message" errors={state.errors} />
+              </div>
+              
+              <button type="submit" className="submit-button" disabled={state.submitting}>
+                {state.submitting ? 'Envoi en cours... / Sending...' : 'Envoyer le message / Send message'}
+              </button>
+              
+              {state.errors && (
+                <div className="status-message status-error">
+                  Une erreur est survenue lors de l'envoi. / An error occurred while sending.
+                </div>
+              )}
+            </form>
+          )}
         </div>
         <button className="back-button" onClick={() => navigate('/accueil')}>
           <i className="fa fa-solid fa-house fa-lg"></i>accueil

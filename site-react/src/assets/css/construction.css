@@ -102,7 +102,19 @@
         background-size: cover;
     }
     
-    .h1-construction, .p-construction {
+    .h1-construction {
+        font-size: 1.4rem; /* Réduction du titre */
+        padding: 0 10px;
+    }
+
+    .p-construction {
         color: #fff;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .h1-construction {
+        font-size: 1.1rem;
     }
 }
