@@ -13,9 +13,12 @@ const Footer: React.FC = () => {
         alt="logo de la société" 
         title="© FG Développement Tous droits réservés" 
       />
-      <h3>© <span>{currentYear}</span> FG Développement - Tous droits réservés</h3>
-      <a className="contact" href="mailto:florentgerard@fgdeveloppement.com">ME CONTACTER</a>
-      <Link className="about" to="/about">à propos</Link>
+      <p className="copyright">© <span>{currentYear}</span> FG Développement - Tous droits réservés</p>
+      
+      {/* Modification du lien mailto en Link interne vers la page contact */}
+      <Link className="contact" to="/contact">ME CONTACTER</Link>
+      
+      <Link className="about-link" to="/about">à propos</Link>
     </footer>
   );
 };

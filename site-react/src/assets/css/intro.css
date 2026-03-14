@@ -1,0 +1,97 @@
+/* STYLE PAGE INTRO (HOME) */
+
+.home-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+#myVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+/* OVERLAY SPINNER - STYLE GLASSMORPHISM */
+.spinner-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* Un fond légèrement transparent au lieu du noir pur */
+    background-color: rgba(0, 0, 0, 0.4); 
+    /* Flou sur ce qu'il y a derrière (la vidéo) */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.spinner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.loader {
+    width: 100px; /* Plus large */
+    height: 100px; /* Plus large */
+    border: 6px solid rgba(255, 255, 255, 0.1);
+    /* Couleur plus vive (Bleu Cyan Pro) */
+    border-top: 6px solid #00d2ff; 
+    border-radius: 50%;
+    animation: spin 1s cubic-bezier(0.5, 0.1, 0.5, 0.9) infinite;
+    /* Halo lumineux pour plus de visibilité */
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.6), inset 0 0 10px rgba(0, 210, 255, 0.3);
+}
+
+.loading-text {
+    color: #fff;
+    font-family: 'VarelaRound-Regular', sans-serif;
+    letter-spacing: 8px; /* Plus d'espacement pour l'effet Pro */
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 800;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+    0%, 100% { 
+        opacity: 0.6; 
+        transform: scale(0.95);
+    }
+    50% { 
+        opacity: 1; 
+        transform: scale(1.05);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

@@ -1,203 +1,108 @@
-/*------------------------------------------------------*/
-/*******			 	CODE GÉNÉRAL 			   ******/
-/*------------------------------------------------------*/
+/* STYLE PAGE CONSTRUCTION */
 
-@font-face {
-    font-family: 'VarelaRound-Regular';
-    src: url('../fonts/VarelaRound-Regular.ttf') format('truetype'); /* On peut jouter d'autres formats de police si nécessaire */
-}
-
-body {
-	margin: 0;
-	padding: 0;
+.body-construction-page {
     background: linear-gradient(to right, #0ebcf1, #cceff0);
-	font-family: 'VarelaRound-Regular', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
-/*------------------------------------------------------*/
-/****** 			PAGE CONSTRUCTION			   ******/
-/*------------------------------------------------------*/
-
-.body-construction {
-	margin: 0;
-	padding: 0;
-	height: 100vh;
+.construction-container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
 }
 
 .split {
-	height: 100%;
-	width: 50%;
-	position: fixed;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 .left {
-	left: 0;
-	top: 0;
-	width: 50%;
-	height: auto;
+    background: url('../img/developpeur-web.jpg') center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.logo-overlay {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.sizeLogoFGDEV {
+    width: 150px;
+    height: auto;
 }
 
 .right {
-	right: 0;
-	top: 20px;
-	width: 50%;
+    background-color: transparent;
+    text-align: center;
 }
 
-.centered {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-
-.img-construction-left {
-	background-repeat: no-repeat;
-	background-size: contain;
-	width: 100%;
-	height: 100vh;
-	position: relative;
+.h1-construction {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 20px;
 }
 
 .img-construction-right {
     width: 150px;
-    height: 150px;
-    box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
-}
-
-.h1-construction {
-	font-family: 'Allerta Stencil', sans-serif;
-	color: #000000;
-	transform:scaleY(2);
-	font-size: 2rem;
-	font-weight: 700;
-	text-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
+    height: auto;
+    border-radius: 10px;
+    margin: 30px 0;
 }
 
 .p-construction {
-	color: #000;
-	font-size: 1rem;
-	font-weight: 900;
-	letter-spacing: 10px;
-	transform:scaleY(1.5);
-	text-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 10px 0;
 }
 
 .joindre-construction {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	background-color: #e1e1e1;
-	width: 600px;
-	height: 150px;
-	box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
+    background-color: #fcfcfc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-top: 30px;
+    max-width: 90%;
 }
 
 .mailto {
-	text-decoration: none;
-	font-size: 1.5rem;
-	color: #0ebcf1;
-	text-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
+    color: #0ebcf1;
+    font-weight: 800;
+    font-size: 1.2rem;
 }
 
-.mailto:hover {
-	color: #000;
-	font-weight: 900;
-}
+/* RESPONSIVE CONSTRUCTION */
 
-.logoFGDEV {
-	position: absolute;
-	top: 78%;
-	left: 65%;
-}
-
-.sizeLogoFGDEV {
-	width: 238px;
-	height: 134px;
-}
-
-
-/*------------------------------------------------------*/
-/*******	    	VERSION  RESPONSIVE	   		   ******/
-/*------------------------------------------------------*/
-
-@media screen  and (max-width: 992px) {
-	body {
-		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/img/developpeur-web.jpg);
-	}
-
-	.left {
-		display: none;
-	}
-
-	.right {
-		margin-right: 250px;
-	}
-
-	.h1-construction,
-	.p-construction {
-		color: #ffffff;
-	}
-
-	.h1-construction {
-		font-size: 1.5rem;
-	}
-
-	.p-construction {
-		font-size: 0.8rem;
-	}
-
-	.img-construction-right {
-		width: 100px;
-		height: 100px;
-	}
-
-	.centered {
-		width: 130%;
-	}
-}
-
-@media screen  and (max-width: 395px) {
-	.body-construction {
-		margin: 20px;
-		height: auto;
-	}
-
-	.right {
-		margin-right: 120px;
-	}
-
-	.centered {
-		margin-top: 60px;
-	}
-
-	.h1-construction {
-		font-size: 1rem;
-	}
-
-	.p-construction {
-		font-size: 0.5rem;
-	}
-
-	.img-construction-right {
-		width: 100px;
-		height: 100px;
-	}
-
-	.img-construction-right {
-		width: 80px;
-		height: 80px;
-	}
-
-	.joindre-construction {
-		width: auto;
-		height: auto;
-		padding: 15px;
-		font-size: 0.7rem;
-	}
-	
-	.mailto {
-		text-decoration: none;
-		font-size: 1.1rem;
-	}
+@media screen and (max-width: 768px) {
+    .construction-container {
+        flex-direction: column;
+    }
+    
+    .left {
+        display: none; /* Cache l'image sur mobile pour focus sur le texte */
+    }
+    
+    .body-construction-page {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                    url('../img/developpeur-web.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    
+    .h1-construction, .p-construction {
+        color: #fff;
+    }
 }

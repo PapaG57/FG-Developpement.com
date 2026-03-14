@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import '../assets/css/styles.css';
@@ -9,6 +10,11 @@ const Creations: React.FC = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Affiches Promotionnelles | FG Développement - Florent GERARD</title>
+        <meta name="description" content="Portfolio de créations d'affiches publicitaires et supports de communication réalisés par Florent GERARD." />
+      </Helmet>
+
       <Header />
       <section className="container">
         <div className="content">
@@ -26,7 +32,7 @@ const Creations: React.FC = () => {
           </div>
         </div>
         <button className="back-button" onClick={() => navigate(-1)}>
-          <i className="fa fa-solid fa-house fa-lg"></i>&ensp;&ensp;&ensp;accueil
+          <i className="fa fa-solid fa-house fa-lg"></i>accueil
         </button>
       </section>
       <Footer />

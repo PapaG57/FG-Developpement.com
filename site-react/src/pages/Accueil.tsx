@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async'; // SEO
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import '../assets/css/styles.css';
@@ -6,6 +7,11 @@ import '../assets/css/styles.css';
 const Accueil: React.FC = () => {
   return (
     <>
+      <Helmet>
+        <title>Accueil | FG Développement - Florent GERARD</title>
+        <meta name="description" content="Découvrez les projets et créations web de Florent GERARD chez FG Développement." />
+      </Helmet>
+      
       <Header />
       <section className="container">
         <div className="content">
