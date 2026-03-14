@@ -19,7 +19,7 @@ const About: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>À propos | FG Développement - Florent GERARD</title>
+        <title>À propos | FG Développement</title>
         <meta name="description" content="Découvrez le parcours de Florent GERARD, expert en développement web et fondateur de FG Développement." />
       </Helmet>
 

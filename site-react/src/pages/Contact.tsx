@@ -37,7 +37,7 @@ const Contact: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Contact | FG Développement - Florent GERARD</title>
+        <title>Contact | FG Développement</title>
         <meta name="description" content="Contactez Florent GERARD pour vos besoins en développement web, maintenance de site ou solutions digitales sur mesure." />
       </Helmet>
 

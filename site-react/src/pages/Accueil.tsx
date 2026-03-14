@@ -8,7 +8,7 @@ const Accueil: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Accueil | FG Développement - Florent GERARD</title>
+        <title>Accueil | FG Développement</title>
         <meta name="description" content="Découvrez les projets et créations web de Florent GERARD chez FG Développement." />
       </Helmet>
       

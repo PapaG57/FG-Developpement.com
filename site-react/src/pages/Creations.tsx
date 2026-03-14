@@ -11,7 +11,7 @@ const Creations: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Affiches Promotionnelles | FG Développement - Florent GERARD</title>
+        <title>Affiches Promotionnelles | FG Développement</title>
         <meta name="description" content="Portfolio de créations d'affiches publicitaires et supports de communication réalisés par Florent GERARD." />
       </Helmet>
 
