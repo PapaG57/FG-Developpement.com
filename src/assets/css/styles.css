@@ -28,7 +28,7 @@ html, body, #root {
 
 body {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                url('../img/developpeur-web.jpg') center center fixed no-repeat;
+                url('/assets/img/developpeur-web.jpg') center center fixed no-repeat;
     background-size: cover;
     font-family: 'VarelaRound-Regular', sans-serif;
 }

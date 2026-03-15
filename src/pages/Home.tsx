@@ -31,10 +31,10 @@ const Home: React.FC = () => {
 
   return (
     <div className="home-container">
-      <video id="myVideo" autoPlay muted playsInline poster="/src/assets/img/vignette.jpg">
-        <source src="/src/assets/video/intro_FGDEV.mp4" type="video/mp4" />
-        <source src="/src/assets/video/intro_FGDEV.webm" type="video/webm" />
-        <source src="/src/assets/video/intro_FGDEV.ogg" type="video/ogg" />
+      <video id="myVideo" autoPlay muted playsInline poster="/assets/img/vignette.jpg">
+        <source src="/assets/video/intro_FGDEV.mp4" type="video/mp4" />
+        <source src="/assets/video/intro_FGDEV.webm" type="video/webm" />
+        <source src="/assets/video/intro_FGDEV.ogg" type="video/ogg" />
       </video>
 
       {isLoading && (

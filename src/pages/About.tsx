@@ -29,7 +29,7 @@ const About: React.FC = () => {
       <section className="container">
         <div className="content">
           <div className="titre-about">
-            <img className="fg-img" src="/src/assets/img/fg-img.jpg" alt="photo de Florent GERARD" />
+            <img className="fg-img" src="/assets/img/fg-img.jpg" alt="photo de Florent GERARD" />
             <h1 style={{ color: '#fcfcfc' }}>{t('history')}</h1>
           </div>
           <p>

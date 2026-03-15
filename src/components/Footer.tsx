@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
     <footer>
       <img 
         className="logo-footer" 
-        src="/src/assets/img/New_Logo_FG_DEV_no_background_blanc.png" 
+        src="/assets/img/New_Logo_FG_DEV_no_background_blanc.png" 
         alt="logo de la société" 
         title={t('copyright', { year: currentYear })}
       />

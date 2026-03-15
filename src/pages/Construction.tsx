@@ -26,12 +26,12 @@ const Construction: React.FC = () => {
       <section className="construction-container">
         <div className="split left">
           <div className="logo-overlay">
-            <img className="sizeLogoFGDEV" src="/src/assets/img/New_Logo_FG_DEV_no_background.png" alt="logo de la société" />
+            <img className="sizeLogoFGDEV" src="/assets/img/New_Logo_FG_DEV_no_background.png" alt="logo de la société" />
           </div>
         </div>
         <div className="split right">
           <h1 className="h1-construction">{t('under_construction')}</h1>
-          <img className="img-construction-right" src="/src/assets/img/site-construction-3.gif" alt="travailleur au repos" />
+          <img className="img-construction-right" src="/assets/img/site-construction-3.gif" alt="travailleur au repos" />
           <p className="p-construction">{t('patience')}</p>
           <div className="joindre-construction">
             <p>{t('questions')}</p>

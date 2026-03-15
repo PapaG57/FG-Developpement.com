@@ -14,7 +14,7 @@ const Header: React.FC = () => {
       <div className="head">
         <img 
           className="logo" 
-          src="/src/assets/img/New_Logo_FG_DEV_no_background.png" 
+          src="/assets/img/New_Logo_FG_DEV_no_background.png" 
           alt="logo de la société" 
           title="© FG Développement Tous droits réservés" 
         />
