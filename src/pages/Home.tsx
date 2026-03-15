@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import '../assets/css/intro.css';
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -39,7 +41,7 @@ const Home: React.FC = () => {
         <div className="spinner-overlay">
           <div className="spinner-container">
             <div className="loader"></div>
-            <div className="loading-text">Initialisation...</div>
+            <div className="loading-text">{t('home_init')}</div>
           </div>
         </div>
       )}

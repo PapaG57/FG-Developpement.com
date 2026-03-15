@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import '../assets/css/styles.css';
 
 const Footer: React.FC = () => {
+  const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
 
   return (
@@ -11,14 +13,13 @@ const Footer: React.FC = () => {
         className="logo-footer" 
         src="/src/assets/img/New_Logo_FG_DEV_no_background_blanc.png" 
         alt="logo de la société" 
-        title="© FG Développement Tous droits réservés" 
+        title={t('copyright', { year: currentYear })}
       />
-      <p className="copyright">© <span>{currentYear}</span> FG Développement - Tous droits réservés</p>
+      <p className="copyright">{t('copyright', { year: currentYear })}</p>
       
-      {/* Modification du lien mailto en Link interne vers la page contact */}
-      <Link className="contact" to="/contact">ME CONTACTER</Link>
+      <Link className="contact" to="/contact">{t('footer_contact')}</Link>
       
-      <Link className="about-link" to="/about">à propos</Link>
+      <Link className="about-link" to="/about">{t('footer_about')}</Link>
     </footer>
   );
 };

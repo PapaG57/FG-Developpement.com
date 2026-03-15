@@ -59,9 +59,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
-    padding: 10px 40px;
+    padding: 15px 60px;
 }
 
 .logo {
@@ -76,8 +76,32 @@ header {
     font-weight: 800;
     font-size: 2.2rem;
     margin: 0;
-    text-align: right;
-    flex: 1;
+    text-align: center;
+}
+
+.language-selector {
+    display: flex;
+    gap: 15px;
+}
+
+.language-selector button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+    padding: 5px;
+    transition: transform 0.3s ease;
+    opacity: 0.6;
+}
+
+.language-selector button:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.language-selector button.active {
+    opacity: 1;
+    border-bottom: 2px solid #050596;
 }
 
 /*------------------------------------------------------*/
@@ -224,7 +248,7 @@ footer {
 /* TABLETTE / PETIT LAPTOP */
 @media screen and (max-width: 1200px) {
     .titre {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
     .card {
         width: 400px;
@@ -251,7 +275,7 @@ footer {
 
     .titre {
         text-align: center;
-        font-size: 1.2rem; /* Réduction supplémentaire */
+        font-size: 1.1rem; /* Réduction supplémentaire */
         letter-spacing: 1px;
         word-wrap: break-word;
         overflow-wrap: break-word;
@@ -298,7 +322,7 @@ footer {
 /* PETIT SMARTPHONE */
 @media screen and (max-width: 480px) {
     .titre {
-        font-size: 1rem; /* Encore plus petit */
+        font-size: 0.9rem; /* Encore plus petit */
         letter-spacing: 0.5px;
     }
     

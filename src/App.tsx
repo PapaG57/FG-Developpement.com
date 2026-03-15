@@ -5,6 +5,7 @@ import About from './pages/About';
 import Creations from './pages/Creations';
 import Construction from './pages/Construction';
 import Contact from './pages/Contact';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/creations" element={<Creations />} />
         <Route path="/construction" element={<Construction />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );
