@@ -1,20 +1,15 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 import '../assets/css/styles.css';
 import '../assets/css/construction.css';
 
 const Construction: React.FC = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
-
-  useEffect(() => {
-    document.body.classList.add('body-construction-page');
-    return () => {
-      document.body.classList.remove('body-construction-page');
-    };
-  }, []);
 
   return (
     <>
@@ -23,26 +18,35 @@ const Construction: React.FC = () => {
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
 
-      <section className="construction-container">
-        <div className="split left">
-          <div className="logo-overlay">
-            <img className="sizeLogoFGDEV" src="/assets/img/New_Logo_FG_DEV_no_background.png" alt="logo de la société" />
-          </div>
-        </div>
-        <div className="split right">
-          <h1 className="h1-construction">{t('under_construction')}</h1>
-          <img className="img-construction-right" src="/assets/img/site-construction-3.gif" alt="travailleur au repos" />
-          <p className="p-construction">{t('patience')}</p>
-          <div className="joindre-construction">
-            <p>{t('questions')}</p>
-            <a className="mailto" href="mailto:florentgerard@fgdeveloppement.com">florentgerard@fgdeveloppement.com</a>
+      <Header />
+      <section className="container">
+        <div className="content construction-page-container">
+          
+          {/* Animation des engrenages */}
+          <div className="gears-container">
+            <i className="fa-solid fa-gear gear-large"></i>
+            <i className="fa-solid fa-gear gear-small"></i>
           </div>
           
-          <button className="back-button" onClick={() => navigate('/accueil')} style={{marginTop: '30px'}}>
-            <i className="fa fa-solid fa-house fa-lg"></i>{t('accueil')}
-          </button>
+          <h1 className="titre-liste">{t('under_construction')}</h1>
+          <h2 className="construction-subtitle">{t('under_construction_subtitle')}</h2>
+          
+          <p className="construction-text">
+            {t('under_construction_text')}
+          </p>
+
+          <div className="actions-buttons">
+            <button className="back-button" onClick={() => navigate('/accueil')} style={{marginTop: 0}}>
+              <i className="fa fa-solid fa-house fa-lg"></i> {t('accueil')}
+            </button>
+            <button className="contact-button" onClick={() => navigate('/contact')}>
+              <i className="fa-solid fa-envelope fa-lg"></i> {t('contact')}
+            </button>
+          </div>
+          
         </div>
       </section>
+      <Footer />
     </>
   );
 };

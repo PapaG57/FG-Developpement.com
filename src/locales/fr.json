@@ -33,11 +33,17 @@
     "poster_1": "affiche 1",
     "poster_2": "affiche 2",
     "poster_desc": "Ces affiches ont été créées en 2023 pour la société MK Services située à Bangui, capitale de la Centrafrique",
-    "under_construction": "page en construction",
+    "under_construction": "Page en développement",
+    "under_construction_subtitle": "Nous préparons quelque chose de nouveau",
+    "under_construction_text": "Cette section du site est actuellement en cours de refonte pour vous offrir une meilleure expérience. Je travaille activement pour la mettre en ligne très prochainement. Merci de votre patience.",
     "patience": "Un peu de patience, j'ai bientôt fini ;-)",
     "questions": "Si vous avez des questions, vous pouvez me joindre ici :",
     "footer_contact": "ME CONTACTER",
     "footer_about": "À PROPOS",
-    "accueil": "accueil"
+    "accueil": "accueil",
+    "not_found_title": "404 - Page non trouvée",
+    "not_found_subtitle": "Oups ! Cette page n'existe pas.",
+    "not_found_text": "Il semble que vous vous soyez un peu perdu. La page que vous recherchez n'est pas disponible ou a été déplacée.",
+    "back_home": "Retour à l'accueil"
   }
 }

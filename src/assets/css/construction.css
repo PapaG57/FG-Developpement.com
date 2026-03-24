@@ -1,120 +1,109 @@
-/* STYLE PAGE CONSTRUCTION */
-
-.body-construction-page {
-    background: linear-gradient(to right, #0ebcf1, #cceff0);
-    min-height: 100vh;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.construction-container {
-    display: flex;
-    width: 100%;
-    min-height: 100vh;
-}
-
-.split {
-    flex: 1;
+.construction-page-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fcfcfc;
+}
+
+/* --- ANIMATION ENGRENAGES --- */
+.gears-container {
+    position: relative;
+    height: 100px;
+    width: 150px;
+    margin-bottom: 30px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
 }
 
-.left {
-    background: url('../img/developpeur-web.jpg') center center no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.logo-overlay {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.sizeLogoFGDEV {
-    width: 150px;
-    height: auto;
-}
-
-.right {
-    background-color: transparent;
-    text-align: center;
-}
-
-.h1-construction {
-    color: #000;
-    text-transform: uppercase;
-    font-size: 2rem;
-    font-weight: 800;
-    margin-bottom: 20px;
-}
-
-.img-construction-right {
-    width: 150px;
-    height: auto;
-    border-radius: 10px;
-    margin: 30px 0;
-}
-
-.p-construction {
-    color: #000;
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin: 10px 0;
-}
-
-.joindre-construction {
-    background-color: #fcfcfc;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    margin-top: 30px;
-    max-width: 90%;
-}
-
-.mailto {
+.gear-large {
+    font-size: 5rem;
     color: #0ebcf1;
-    font-weight: 800;
-    font-size: 1.2rem;
+    animation: spin-right 6s linear infinite;
 }
 
-/* RESPONSIVE CONSTRUCTION */
+.gear-small {
+    font-size: 3rem;
+    color: #ffffff;
+    position: absolute;
+    bottom: -5px;
+    right: 20px;
+    animation: spin-left 6s linear infinite;
+}
+
+@keyframes spin-right {
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes spin-left {
+    100% { transform: rotate(-360deg); }
+}
+
+.construction-subtitle {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.construction-text {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+    text-align: justify;
+    hyphens: auto;
+}
+
+.construction-contact {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 20px;
+}
+
+.construction-contact p {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contact-button {
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    color: #fcfcfc;
+    background-color: #0ebcf1;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #0b98c4;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(14, 188, 241, 0.4);
+}
+
+.actions-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 @media screen and (max-width: 768px) {
-    .construction-container {
-        flex-direction: column;
-    }
-    
-    .left {
-        display: none; /* Cache l'image sur mobile pour focus sur le texte */
-    }
-    
-    .body-construction-page {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                    url('../img/developpeur-web.jpg') center center no-repeat;
-        background-size: cover;
-    }
-    
-    .h1-construction {
-        font-size: 1.4rem; /* Réduction du titre */
-        padding: 0 10px;
-    }
-
-    .p-construction {
-        color: #fff;
-        font-size: 1rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .h1-construction {
-        font-size: 1.1rem;
-    }
+    .gear-large { font-size: 4rem; }
+    .gear-small { font-size: 2.5rem; bottom: 0px; right: 30px; }
+    .construction-subtitle { font-size: 1.3rem; }
+    .construction-text { font-size: 1rem; padding: 0 10px; }
+    .actions-buttons { gap: 10px; }
 }

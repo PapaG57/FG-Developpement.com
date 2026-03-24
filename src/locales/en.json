@@ -33,11 +33,17 @@
     "poster_1": "poster 1",
     "poster_2": "poster 2",
     "poster_desc": "These posters were created in 2023 for the company MK Services located in Bangui, capital of the Central African Republic",
-    "under_construction": "page under construction",
+    "under_construction": "Page under development",
+    "under_construction_subtitle": "Preparing something new",
+    "under_construction_text": "This section of the site is currently being redesigned to offer you a better experience. I am actively working on it to bring it online very soon. Thank you for your patience.",
     "patience": "A little patience, I'm almost done ;-)",
     "questions": "If you have any questions, you can reach me here:",
     "footer_contact": "CONTACT ME",
     "footer_about": "ABOUT",
-    "accueil": "home"
+    "accueil": "home",
+    "not_found_title": "404 - Page not found",
+    "not_found_subtitle": "Oops! This page does not exist.",
+    "not_found_text": "It seems you've wandered off. The page you are looking for is not available or has been moved.",
+    "back_home": "Back to home"
   }
 }

@@ -23,10 +23,10 @@ const Creations: React.FC = () => {
           <h2 className="titre-liste">{t('promo_posters_title')}</h2><br />
           <div className="all-cards">
             <div className="card">
-              <a href="/src/assets/files/Affiche-Promo-Nöel-2023-MK-Services.pdf" title={t('click_here')} target="_blank" rel="noopener noreferrer">{t('poster_1')}</a>
+              <a href="/assets/files/Affiche-Promo-Nöel-2023-MK-Services.pdf" title={t('click_here')} target="_blank" rel="noopener noreferrer">{t('poster_1')}</a>
             </div>
             <div className="card">
-              <a href="/src/assets/files/Affiche-Promo-Nöel-2023-MK-Services-p2.pdf" title={t('click_here')} target="_blank" rel="noopener noreferrer">{t('poster_2')}</a>
+              <a href="/assets/files/Affiche-Promo-Nöel-2023-MK-Services-p2.pdf" title={t('click_here')} target="_blank" rel="noopener noreferrer">{t('poster_2')}</a>
             </div>
             <div className="text-card">
               <p>{t('poster_desc')}</p>
